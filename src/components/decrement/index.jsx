@@ -1,4 +1,4 @@
-import React, { memo, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import { FaMinus } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { decrement } from "../../context/counter-slice/counterSlice";
@@ -13,7 +13,9 @@ const Decrement = () => {
     setDec(newValue);
   };
 
-  //   localStorage.setItem("count", dispatch(increment(+value || 1)));
+  useEffect(() => {
+    localStorage.setItem("count", count);
+  }, [count]);
 
   return (
     <div className="counter__dec">

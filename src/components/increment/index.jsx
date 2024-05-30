@@ -12,8 +12,6 @@ const Increment = () => {
     setValue(newValue);
   };
 
-  //   localStorage.setItem("count", dispatch(increment(+value || 1)));
-
   return (
     <div className="counter__inc">
       <input

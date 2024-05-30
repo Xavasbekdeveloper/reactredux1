@@ -8,7 +8,7 @@ const Reset = () => {
 
   const handleReset = () => {
     dispatch(reset());
-    // localStorage.removeItem("count");
+    localStorage.removeItem("count");
   };
 
   return (

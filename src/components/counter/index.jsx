@@ -10,8 +10,6 @@ const Counter = () => {
   let count = useSelector((state) => state.counter.count);
   let dispatch = useDispatch();
 
-  //   const storedCount = localStorage.getItem("count");
-
   return (
     <section className="counter">
       <h1>Counter App</h1>
