@@ -5,13 +5,14 @@ import { increment } from "../../context/counter-slice/counterSlice";
 
 const Increment = () => {
   let dispatch = useDispatch();
-  const [value, setValue] = useState(localStorage.getItem("count") || 1);
+  const [value, setValue] = useState(1);
 
   const handleChange = (e) => {
     let newValue = e.target.value;
     setValue(newValue);
-    // localStorage.setItem("count", newValue);
   };
+
+  //   localStorage.setItem("count", dispatch(increment(+value || 1)));
 
   return (
     <div className="counter__inc">

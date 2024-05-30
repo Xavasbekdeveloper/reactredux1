@@ -9,7 +9,7 @@ const counterSlice = createSlice({
     increment(state, { payload }) {
       state.count += payload;
     },
-    decrement(state, {payload}){
+    decrement(state, { payload }) {
       state.count -= payload;
     },
     reset(state) {
